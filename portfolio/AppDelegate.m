@@ -8,7 +8,9 @@
 
 #import "AppDelegate.h"
 
-@interface AppDelegate ()
+@interface AppDelegate () {
+    User * currentUser;
+}
 
 @end
 
@@ -40,6 +42,24 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+-(User *)currentUser {
+    
+    if (!currentUser) {
+        NSNumber * curUserID = [[NSUserDefaults standardUserDefaults] valueForKey:@"currentUser"];
+        if (curUserID) {
+            currentUser = [User userByID:curUserID];
+        }
+    }
+    
+    return currentUser;
+}
+
+-(void)setCurrentUser:(User *)curUser {
+    currentUser = curUser;
+    [[NSUserDefaults standardUserDefaults] setValue:curUser.userID forKey:@"currentUser"];
+    [[NSUserDefaults standardUserDefaults] synchronize];
 }
 
 @end

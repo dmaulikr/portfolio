@@ -1,5 +1,8 @@
 #import "_User.h"
 
 @interface User : _User {}
-// Custom logic goes here.
+
+
++(instancetype)userByID:(NSNumber*)userID;
+
 @end

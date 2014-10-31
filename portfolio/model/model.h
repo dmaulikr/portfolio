@@ -6,4 +6,5 @@
 //  Copyright (c) 2014 Ravil Khusainov. All rights reserved.
 //
 
+#import "CoreData+MagicalRecord.h"
 #import "User.h"

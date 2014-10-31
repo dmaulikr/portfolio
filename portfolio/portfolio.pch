@@ -7,8 +7,9 @@
 //
 
 #ifdef __OBJC__
+#import "model.h"
     #import "AppDelegate.h"
-    #import "model.h"
+
 #endif
 
 #define APP_DELEGATE  ((AppDelegate*)[UIApplication sharedApplication].delegate)

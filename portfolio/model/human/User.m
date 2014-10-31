@@ -1,5 +1,6 @@
 #import "User.h"
 
+
 @interface User ()
 
 // Private interface goes here.
@@ -8,6 +9,9 @@
 
 @implementation User
 
-// Custom logic goes here.
++(instancetype)userByID:(NSNumber *)userID {
+    User * user = [User MR_executeFetchRequestAndReturnFirstObject:nil];
+    return user;
+}
 
 @end
