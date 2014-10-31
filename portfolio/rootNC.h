@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RootNC.h
 //  portfolio
 //
 //  Created by Ravil Khusainov on 31.10.14.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface RootNC : UINavigationController
 
 @end
-
