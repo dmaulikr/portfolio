@@ -1,0 +1,14 @@
+//
+//  portfolio.pch
+//  portfolio
+//
+//  Created by Ravil Khusainov on 31.10.14.
+//  Copyright (c) 2014 Ravil Khusainov. All rights reserved.
+//
+
+#ifdef __OBJC__
+    #import "AppDelegate.h"
+    #import "model.h"
+#endif
+
+#define APP_DELEGATE  ((AppDelegate*)[UIApplication sharedApplication].delegate)
